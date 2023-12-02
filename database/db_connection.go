@@ -3,7 +3,6 @@ package database
 import (
     "gorm.io/gorm"
     "gorm.io/driver/mysql"
-    // "github.com/TgrRys/finalProject-BTPN/helpers"
     "log"
     "time"
 )
