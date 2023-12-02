@@ -29,3 +29,22 @@ func DBConnect() *gorm.DB {
 
     return db
 }
+
+// table sql 
+// CREATE TABLE IF NOT EXISTS `users` (
+//     `id` INT AUTO_INCREMENT PRIMARY KEY, 
+//     `username` VARCHAR(128) NOT NULL,
+//     `email` VARCHAR(128) UNIQUE NOT NULL,
+//     `password` VARCHAR(128) NOT NULL,
+//     `created_at` DATETIME,
+//     `updated_at` DATETIME
+// );
+
+// CREATE TABLE IF NOT EXISTS `photo` (
+//     `id` INT AUTO_INCREMENT PRIMARY KEY, 
+//     `title` VARCHAR(255) NOT NULL,
+//     `caption` VARCHAR(255) NOT NULL,
+//     `user_id` INT NOT NULL,
+//     `photo_url` VARCHAR(255) NOT NULL,
+//     FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
+// );
